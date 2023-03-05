@@ -1,0 +1,103 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.form-block,
+.table-block{
+    /* border: 1px solid; */
+    width: 40%;
+    height: 70vh;
+    margin: 0 20px;
+}
+p{
+    margin-bottom: 10px;
+}
+.input{
+    width: 100%;
+    height: 40px;
+    margin-bottom: 30px;
+    font-size: 18px;
+    padding-left: 10px;
+    border: 1px solid grey;
+    
+    border-radius: 3px;
+}
+.input:focus{
+    border: 1px solid blue;
+    outline: blue;
+    box-shadow: 0 0 5px 0 lightblue;
+}
+.button-container{
+    position: relative;
+}
+
+.add-user-button,
+.edit-user-button{
+    position: absolute;
+    border: 2px solid green;
+    color: green;
+    background-color: white;
+    width: 120px;
+    height: 40px;
+    font-size: 18px;
+    border-radius: 3px;
+}
+.add-user-button{
+    z-index: 1;
+}
+.edit-user-button{
+    position: absolute;
+}
+
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+th{
+    line-height: 50px;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    text-align: start;
+    padding-left: 4px;
+}
+
+tr{
+    line-height: 64px;
+    border-top: 1px solid grey;
+}
+td{
+    margin: auto;
+    padding-left: 4px;
+}
+
+.edit-button,
+.delete-button{
+    border: none;
+    border-radius: 3px;
+    height: 40px;
+    color: black;
+    padding: 0 14px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.edit-button:hover,
+.delete-button:hover{
+    box-shadow: 0 0 3px 0 blue;
+}
+
+
+.edit-button{
+    background-color: sandybrown;
+}
+.delete-button{
+    background-color: orangered;
+    color: #fff
+}
